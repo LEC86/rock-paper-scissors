@@ -1,0 +1,33 @@
+.robot {
+    width: 200px;
+    display:block;
+    margin-left: auto;
+    margin-right: auto
+} 
+
+#robotHolder {
+    transform: rotate(180deg);
+    display:block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#holder {
+    display:block;
+    margin-left: auto;
+    margin-right: auto
+
+}
+
+#bgnBtn{
+    display:block;
+    margin-left: auto;
+    margin-right: auto
+}
+
+#winLoseText,#score, #roundFinal {
+    text-align: center;
+    
+    margin-left: auto;
+    margin-right: auto
+}
