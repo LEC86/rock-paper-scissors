@@ -1,20 +1,30 @@
 let youScore = 0;
 let pcScore = 0;
-let choice;
+let choiceL;
 let results;
  
 
-function startGame(){
- document.getElementById('roundFinal').innerHTML = "";
-playerSelection();
-changepcholder();
-gameResult();
- roundScoreYou();
- roundScorePc();
- winnerDecide();
 
 
-}
+const buttons = document.querySelectorAll('button');
+
+buttons.forEach((button) => {
+       button.addEventListener('click', () => {
+         choiceL = button.id;
+
+         document.getElementById('roundFinal').innerHTML = "";
+         playerSelection();
+         changepcholder();
+         gameResult();
+          roundScoreYou();
+          roundScorePc();
+          winnerDecide();
+
+
+
+       })
+    })
+
 
 function winnerDecide(){
        if (youScore === 3) {
@@ -43,10 +53,12 @@ function changepcholder(){
         }
 
 
+
+
+
 function playerSelection(){
               
-              let choice1 = prompt("Enter Your Choice: ROCK, PAPER, or SCISSORS");
-              choiceL = choice1.toLowerCase();
+             
           
               if (choiceL === "rock") {
                      choice =  0
